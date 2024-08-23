@@ -7,7 +7,7 @@ from pathlib import Path
 session = frida.attach("QQMusic.exe")
 
 # 加载并执行 JavaScript 脚本
-script = session.create_script(open("hook_qq_music.js", "r", encoding="utf-8").read())
+script = session.create_script(open(r"D:\decrypt-mflac-frida-main/hook_qq_music.js", "r", encoding="utf-8").read())
 script.load()
 
 # 创建输出目录
